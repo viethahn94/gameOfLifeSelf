@@ -4,17 +4,25 @@
     <meta charset="UTF-8">
     <title>Game of Life</title>
     <script src="gameOfLifeSelf.js"></script>
+
+
+    <style>
+        #demo{
+            display: flex;
+            width: 120px;
+            flex-wrap: wrap;
+        }
+    </style>
 </head>
 <body>
-   <div style="display: flex">
-       <div style="width: 10px ; height: 10px ; background: white; border: 1px solid gray; float: left" ></div>
-       <div style="width: 10px ; height: 10px ; background: black; border: 1px solid gray; float: left" ></div>
-   </div>
+   <div id="demo">
 
-   <div style="display: flex">
-       <div style="width: 10px ; height: 10px ; background: white; border: 1px solid gray; float: left" ></div>
-       <div style="width: 10px ; height: 10px ; background: black; border: 1px solid gray; float: left" ></div>
    </div>
+   <script>
+       document.getElementById("demo").innerHTML=html;
+   </script>
+
+
 
 </body>
 </html>
