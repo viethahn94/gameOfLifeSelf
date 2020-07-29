@@ -81,11 +81,10 @@ $(document).ready(function () {
     document.getElementById("demo").innerHTML = setupLife(lifeData);
 
     setInterval(function () {
-        let oldLife = lifeData;
-        let newLife = nextTheLive(oldLife);
-        lifeData = newLife;
+        // let newLife = nextTheLive(lifeData);
+        lifeData = nextTheLive(lifeData);;
         document.getElementById("demo").innerHTML = setupLife(lifeData);
-    }, 1000)
+    }, 300)
 });
 
 
